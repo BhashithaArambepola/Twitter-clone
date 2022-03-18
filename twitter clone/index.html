@@ -1,39 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Twitter</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
-<header>
-    <ion-icon id="bird" name="logo-twitter"></ion-icon>
-    <h2>Home</h2>
-    <ion-icon id="top-tweet" name="star-outline"></ion-icon>
-    <div id="search-panel">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <ion-icon id="bird" name="logo-twitter"></ion-icon>
+      <h2>Home</h2>
+      <ion-icon id="top-tweet" name="sparkles-outline"></ion-icon>
+      <div id="search-panel">
         <ion-icon id="search-icon" name="search-outline"></ion-icon>
-        <input type="text" name="Search Twitter" id="Search-Twitter">
-    </div>
-</header>
-<div id="panel1"></div>
-<nav></nav>
-<main></main>
-<div id="tagsLine"></div>
-<div id="panel2"></div>
+        <input type="text" name="Search Twitter" id="Search-Twitter" />
+      </div>
+    </header>
+    <div id="panel1"></div>
+    <nav>
+      <a id="home" href="#"
+        ><ion-icon name="home-outline"></ion-icon> &nbsp&nbsp&nbsp Home</a
+      >
+      <a href="#"
+        ><ion-icon name="snow-outline"></ion-icon
+        >&nbsp&nbsp&nbsp&nbsp&nbspExplore</a
+      >
+      <a href="#"
+        ><ion-icon name="notifications-outline"></ion-icon
+        >&nbsp&nbsp&nbsp&nbsp&nbspNotofications</a
+      >
+      <a href="#"
+        ><ion-icon name="mail-outline"></ion-icon>&nbsp&nbsp&nbsp&nbsp
+        Messages</a
+      >
+      <a href="#"
+        ><ion-icon name="bookmark-outline"></ion-icon
+        >&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBookmarks</a
+      >
+      <a href="#"
+        ><ion-icon name="list-outline"></ion-icon>&nbsp&nbsp&nbsp&nbsp List</a
+      >
+      <a href="#"
+        ><ion-icon name="person-outline"></ion-icon>&nbsp&nbsp&nbsp&nbsp
+        Profile</a
+      >
+      <a href="#"
+        ><ion-icon name="list-circle-outline"></ion-icon>&nbsp&nbsp&nbsp&nbsp
+        More</a
+      >
+      <button id="btnTweet">Tweet</button>
 
+      <div id="profile">
+        <!-- <div> -->
+        <img src="img/man(1).png" alt="Profile pic" id="proPic" />
+        <h4 id="name">Bhashitha Arambepola</h4>
+        <h6 id="userName">@bhashithaArambe3</h6>
+        <!-- </div> -->
+      </div>
+    </nav>
+    <main>
+      <div id="status">
+        <img src="img/man(1).png" alt="profile Picture" id="userPic" />
 
+        <h3 id="content">What's happening?</h3>
+        <div id="iconBar">
+          <ion-icon name="image-outline"></ion-icon>
+          <ion-icon name="videocam-outline"></ion-icon>
+          <ion-icon name="stats-chart-outline"></ion-icon>
+          <ion-icon name="happy-outline"></ion-icon>
+          <ion-icon name="calendar-outline"></ion-icon>
+          <ion-icon name="location-outline"></ion-icon>
+
+          <button id="tweet-post">Tweet</button>
+        </div>
+      </div>
+    </main>
+    <div id="tagsLine"></div>
+    <div id="panel2"></div>
 
     <script
-    type="module"
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-  ></script>
-  <script
-    nomodule
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-  ></script>
-</body>
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
