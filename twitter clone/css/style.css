@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  text-decoration: none;
 }
 
 header {
@@ -11,7 +12,7 @@ header {
   position: fixed;
   z-index: 10;
   top: 0;
-  background-color: rgb(31, 30, 30);
+  background-color: rgba(31, 30, 30, 0.706);
 }
 
 #bird {
@@ -21,6 +22,13 @@ header {
   float: left;
   margin-top: 5px;
   margin-left: 16%;
+}
+
+#bird:hover{
+    background-color: rgba(142, 142, 143, 0.425);
+    border-radius: 50px;
+    cursor: pointer;
+    
 }
 h2 {
   color: rgb(177, 177, 177);
@@ -37,6 +45,12 @@ h2 {
   float: right;
   margin-top: -17px;
   margin-right: 31%;
+}
+
+#top-tweet:hover{
+    background-color: rgba(142, 142, 143, 0.425);
+    border-radius: 50px;
+    cursor: pointer;
 }
 #search-panel {
   width: 14.5%;
@@ -59,15 +73,21 @@ h2 {
   padding-top: 2px;
   padding-bottom: 2px;
   margin-top: 0px;
-  /* align-content: center; */
   text-align: center;
   color: black;
-  box-decoration: #000;
-}
+  
+
+  /* width: 300px; */
+  /* height: 40px; */
+  background-color: rgba(236, 240, 243, 0.637);
+  /* border-radius: 30px; */
+  
+  /* paddin */
+  }
 /* --------------panel1------------------------------------------ */
 
 #panel1 {
-    background-color: rgb(31, 30, 30);
+  background-color: rgb(31, 30, 30);
   height: 100%;
   width: 15%;
   left: 0%;
@@ -81,20 +101,25 @@ nav {
   width: 15%;
   position: fixed;
   left: 15%;
+}
+#navList {
   margin-top: 1cm;
-
-  z-index: 25;
 }
 
+nav a:hover{
+    background-color: rgba(142, 142, 143, 0.425);
+    cursor: pointer;
+}
 nav a {
   text-align: left;
   margin-left: 2%;
   display: block;
   color: rgb(177, 177, 177);
   padding-left: 10px;
-  padding-top: 8%;
+  padding-top: 5%;
   text-decoration: none;
   font-size: 14px;
+  padding-bottom: 5%;
 }
 
 nav button {
@@ -108,107 +133,303 @@ nav button {
   margin-top: 10%;
 }
 
-
-#profile{
-    margin-top: 125%;
+#profile {
+  margin-top: 105%;
+  /* background-color: rgba(240, 240, 240, 0.103); */
+  width: 100%;
+  height: 8%;
+  /* border-radius: 50px; */
+  
+}
+#profile:hover{
+    margin-top: 105%;
     background-color: rgba(240, 240, 240, 0.103);
     width: 100%;
     height: 8%;
     border-radius: 50px;
-    
-   
+    cursor: pointer;
+} 
+#proPic {
+  margin-top: 2.5%;
+  margin-left: 2.5%;
+  width: 20%;
+  float: left;
 }
-#proPic{
-    margin-top: 2.5%;
-    margin-left: 2.5%;
-    width: 20%;
-    float: left; 
-    
+#name {
+  font-size: small;
+  padding-top: 4%;
+  margin-left: 25%;
+  color: rgb(231, 224, 224);
+  width: 70%;
+  height: 30%;
 }
-#name{
-    font-size: small;
-    padding-top: 4%;
-    margin-left: 25%;
-    color: rgb(231, 224, 224);
-    width: 70%;
-    height: 30%;
-}
-#userName{
-    font-size: smaller;
-    font-weight: lighter;
-    padding-top: 5%;
-    margin-left: 25%;
-    color: rgb(196, 196, 196);
-    width: 70%;
-    height: 30%;
+#userName {
+  font-size: smaller;
+  font-weight: lighter;
+  padding-top: 5%;
+  margin-left: 25%;
+  color: rgb(196, 196, 196);
+  width: 70%;
+  height: 30%;
 }
 /* -----------------------main-bar--------------------------------------- */
 main {
-    background-color: rgb(31, 30, 30);
+  background-color: rgb(31, 30, 30);
   height: 100%;
   width: 40%;
-  position: fixed;
+  position: absolute;
   left: 30%;
   border-left: 0.5px solid rgba(211, 211, 211, 0.281);
-
 }
 
-#status{
-    background-color: rgb(31, 30, 30);
-    width: 100%;
-    height: 20%;
-    margin-top: 1cm;
-    
-    
+#status {
+  background-color: rgb(31, 30, 30);
+  width: 100%;
+  height: 20%;
+  margin-top: 1cm;
+  border-bottom: 0.5px solid rgba(211, 211, 211, 0.281);
 }
 
-#userPic{
-    margin-top: 1%;
-    margin-left: 2.5%;
-    width: 10%;
-    float: left;
-    
+#userPic {
+  margin-top: 1%;
+  margin-left: 2.5%;
+  width: 8%;
+  float: left;
 }
 
-#content{
-    font-size: small;
-    padding-top: 5%;
-    margin-left: 15%;
-    color: rgb(231, 224, 224);
-    width: 70%;
-    height: 30%;
+#content {
+  font-size: small;
+  padding-top: 5%;
+  margin-left: 15%;
+  color: rgb(231, 224, 224);
+  width: 70%;
+  height: 30%;
 }
 
-#iconBar{
-    /* background-color: aqua; */
-    margin-left: 15%;
-    margin-top: 8%;
+#iconBar {
+  margin-left: 15%;
+  margin-top: 8%;
 }
 
-#iconBar ion-icon{
-
-    color: rgb(20, 127, 189);
-    padding-right: 2%;
-
+#iconBar ion-icon {
+  color: rgb(20, 127, 189);
+  padding-right: 2%;
 }
-#tweet-post{
-    float: right;
-    margin-right: 5%;
-    width: 15%;
-    height: 30px;
-    border-radius: 50px;
-    background-color: rgb(44, 70, 185);
-    color: rgb(207, 207, 207);
+#tweet-post {
+  float: right;
+  margin-right: 5%;
+  width: 15%;
+  height: 30px;
+  border-radius: 50px;
+  background-color: rgb(44, 70, 185);
+  color: rgb(207, 207, 207);
+}
+#showTweets {
+  background-color: rgb(31, 30, 30);
+  border-bottom: 0.5px solid rgba(211, 211, 211, 0.281);
+  width: 100%;
+  height: 5%;
+  align-items: center;
+}
+#showTweets:hover{
+    cursor: pointer;
+    background-color: rgba(245, 245, 250, 0.034);
+}
+#showTweets h6 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 12px;
+  padding-top: 2%;
+  color: rgb(20, 127, 189);
+}
+/* --------------------------------------------------------- */
+#tweetUpdates1 {
+  background-color: darkgreen;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#postProPic {
+  width: 8%;
+  border-radius: 50px;
+  margin-top: 2%;
+  margin-left: 2.5%;
+  float: left;
+}
+#tweetUpdates1 h3 {
+  width: 21%;
+  margin-left: 3%;
+  margin-top: 3%;
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(207, 207, 207);
+}
+#verify {
+  width: 2%;
+  margin-top: 2%;
+  margin-left: 0.1%;
+  color: rgb(207, 207, 207);
+}
+
+#tweetHedding {
+  background-color: rgb(31, 30, 30);
+  height: 10%;
+}
+#tweetBody {
+  background-color: rgb(31, 30, 30);
+  height: 44%;
+}
+#tweetBottom {
+  background-color: rgb(31, 30, 30);
+  height: 10%;
+  border-bottom: 0.5px solid rgba(211, 211, 211, 0.281);
+}
+
+#post {
+  border-radius: 25px;
+  width: 80%;
+  float: right;
+  margin-right: 3%;
+  margin-top: 1%;
+}
+
+#content1 {
+  text-align: justify;
+  width: 100%;
+  float: left;
+  margin-top: -20px;
+  margin-left: -5px;
+}
+#tweetBottom a {
+  margin-right: 15%;
+  color: rgb(207, 207, 207);
+}
+#reacts {
+  margin-left: 18%;
+  font-size: 15px;
+}
+
+#postProPic2 {
+  width: 8%;
+  border-radius: 50px;
+  margin-top: 2%;
+  margin-left: 2.5%;
+  float: left;
+}
+#tweetUpdates2 h3 {
+  width: 21%;
+  margin-left: 3%;
+  margin-top: 3%;
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(207, 207, 207);
+}
+#verify2 {
+  width: 2%;
+  margin-top: 2%;
+  margin-left: 0.1%;
+  color: rgb(207, 207, 207);
+}
+
+#tweetHedding2 {
+  background-color: rgb(31, 30, 30);
+  height: 10%;
+}
+#tweetBody2 {
+  background-color: rgb(31, 30, 30);
+  height: 44%;
+}
+#tweetBottom2 {
+  background-color: rgb(31, 30, 30);
+  height: 10%;
+  border-bottom: 0.5px solid rgba(211, 211, 211, 0.281);
+}
+
+#post2 {
+  border-radius: 25px;
+  width: 80%;
+  float: right;
+  margin-right: 3%;
+  margin-top: 1%;
+}
+
+#content2 {
+  text-align: justify;
+  width: 100%;
+  float: left;
+  margin-top: -20px;
+  margin-left: -5px;
+}
+#tweetBottom2 a {
+  margin-right: 15%;
+  color: rgb(207, 207, 207);
+}
+#reacts2 {
+  margin-left: 18%;
+  font-size: 15px;
 }
 
 /* --------------------------tag-line------------------------------------ */
 #tagsLine {
   background-color: rgb(31, 30, 30);
-  height: 100%;
+  height: 143%;
   width: 15%;
-  position: fixed;
+  position: absolute;
   left: 70%;
   border-left: 0.5px solid rgba(211, 211, 211, 0.281);
+}
+#TrendsForYou {
+  background-color: rgba(128, 128, 128, 0.226);
+  width: 90%;
+
+  margin-left: 5%;
+  margin-top: 25%;
+  top: 20%;
+  border-radius: 12px;
+}
+
+#trends {
+  z-index: 50;
+  text-align: center;
+  color: rgb(207, 207, 207);
+  font-weight: normal;
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+#tags {
+  margin-left: 5%;
+  color: rgb(177, 177, 177);
+  margin-top: 6%;
+  font: 0.8rem sans-serif;
+}
+
+#tagSub {
+  margin-left: 5%;
+  color: rgb(177, 177, 177);
+  margin-top: 1%;
+  font: 0.6rem sans-serif;
+}
+#tagDetails:hover{
+   
+   background-color: rgba(142, 142, 143, 0.425);
+   cursor: pointer;
+   
+}
+#SeeMore{
+    text-align: center;
+    font-weight: normal;
+  font-size: 10px;
+  color: rgb(40, 112, 194);
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#SeeMore:hover{
+    
+    cursor: pointer;
 }
 /* ---------------------------panel-2---------------------------------- */
 #panel2 {
